@@ -7,16 +7,24 @@
 */
 
 int main(){
-    int num;
-    printf("입력: ");
-    scanf("%d", &num);
+ //   int num;
+ //   printf("입력: ");
+ //   scanf("%d", &num);
+ //  int x=(num/100);
+ //  int y=(num-(x*100))/10;
+ //  int z=(num-(x*100)-(y*10)); 
+ //  int t=x+y+z;
+ //  printf("%d", t);
 
-    int x=(num/100);
-    int y=(num-(x*100))/10;
-    int z=(num-(x*100)-(y*10)); 
-    int t=x+y+z;
+int num;
+int total=0;
+printf("입력: ");
+scanf("%d", &num);
 
-    printf("%d", t);
-
+while(num>0){
+    total+=(num%10);
+    num/=10;
+}
+printf("total : %d",total);
 
 }
