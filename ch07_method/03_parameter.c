@@ -1,0 +1,16 @@
+/*
+Parameter
+ - 함수의 입력값
+ - 여러 개 사용 가능(, 구분)
+ - 똑같은 이름의 매개변수는 사용 불가
+ - 매개변수를 사용하지 않을 땐 void 사용 
+*/
+#include <stdio.h>
+int get_num(int a, int b);      // 변수 이름 호출이기 때문에 타입을 바꿔도 중복 허용X : int a, char a(X)
+int get_num(int a, int b){
+        return 5;
+    }
+
+int main(){
+    printf("%d",get_num(1, 2));
+}
