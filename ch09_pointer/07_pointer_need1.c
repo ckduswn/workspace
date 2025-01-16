@@ -23,7 +23,7 @@ void swap(int *pa, int *pb){    // 포인터 변수 pa
 int main(){
     int a=10, b=99;
     // 프로그래밍 언어에서 함수가 외부로부터 데이터를 얻는 방법 2가지
-    // 1. Call-by-value
+    // 1. Call-by-value : COPY
     //  - 함수 호출시 매개변수로 값의 복사본 전달
     //  - 함수 내에서 매개변수를 변경해도 원본값에는 영향을 주지 않음.
     // 2. Call-by-reference
