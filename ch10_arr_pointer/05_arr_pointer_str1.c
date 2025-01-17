@@ -15,6 +15,19 @@ C언어(절차지향)는 문자열 자료형 지원X
     따라서, 그 값을 바꾸는 명령 실행을 제한함. 바꾸려 하지 말고 새 값 만들어라 그냥..
     ex)
     "apple"='t'; 코드상으론 문제X, but 실행시 "강제 종료"
+ ※ 자료형에 따른 scanf() 사용법
+    ex)
+    int num = 4;
+    char name[4] = "ccw";
+    int ary[3] = {10, 20, 30};
+    scanf("%d", &num);     
+    scanf("%s", name);     // 문자열 받을 땐 주소 연산자 & 안 씀. 그 자체가 주소라서.
+    // 배열명 → 첫 번째 요소의 시작 주소
+    // - ary(주소) + 1 → 주소 연산. 주소이므로 & 안 붙인다.
+    // - ary[2] → 세 번째 요소의 값. & 붙여야 함.
+    scanf("%d", &ary[2]);
+    scanf("%d", ary+2);
+
  ※ 객체지향언어의 Mutable Types와 Immutable Types
     1. Mutable Types : 생성 후 수정 가능한 자료형
      - List, Dict, ...etc.
