@@ -22,4 +22,8 @@ int main() {
     printf("%s\n", test1);
     printf("%s\n", test2);
     printf("%s\n", test3);
-}
+}   
+// 해설   : n 전역 변수 선언 
+// answer : 박영희
+//          박영희
+//          박영희 

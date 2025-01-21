@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// switch case : break문 중요! 없는 문제가 다수 출제되지만.. 
 // 정답: BCD
 
 int main() {
@@ -13,7 +13,7 @@ int main() {
     switch(sum/30) {
         case 10:
         case 9: printf("A");
-        case 8: printf("B");
+        case 8: printf("B");    // 해당하는 여기부터 default까지 쭉 실행 
         case 7:
         case 6: printf("C");
         default:  printf("D");
