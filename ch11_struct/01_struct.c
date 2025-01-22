@@ -14,7 +14,7 @@
              struct student{
              int num;               //      자료형을 만들어서 쓰는 것. 배열이 아니라 변수 선언한 거니 s1[1](X), s1.num(O)
              double grade;
-             }
+             };
 
      2. 구조체 변수 선언
          → 저장 공간 할당 
